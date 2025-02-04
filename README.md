@@ -41,8 +41,7 @@ At Shaktishila, we specialize in harnessing the power of biowaste to generate re
 Ready to explore renewable energy solutions for your business or community? Reach out to us today:
 
 - Website: [https://www.shaktishila.in](https://www.shaktishila.in)
-- Email: [contact@shaktishila.in](mailto:contact@shaktishila.in)
-- Phone: [Insert Contact Number]
+- Email: [info@shaktishila.in](mailto:info@shaktishila.in)
 
 ## License
 
