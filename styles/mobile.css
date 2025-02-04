@@ -1,0 +1,36 @@
+@media only screen and (max-width: 600px) {
+    .slide{
+        height: 100px;
+    }
+    .hero-content{
+        padding: unset !important;
+    }
+    
+    .about{
+        padding: 20px;
+        font-size: small;
+        text-align: justify;
+    }
+    
+    .flex-50{
+        width: unset;
+      }
+    .flex-1,
+    .flex-2{
+        padding: 20px;
+    }
+    .flex-2{
+        text-align: left;
+    }
+    .icon-left{
+        padding-left: unset;
+      }
+
+      .contact{
+        padding: 20px;
+      }
+      footer{
+        padding: 20px;
+        font-size: small;
+      }
+}
