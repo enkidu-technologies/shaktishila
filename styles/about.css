@@ -1,0 +1,28 @@
+main{
+    padding: 50px;
+}
+main .icon{
+    font-size: 100px;
+}
+
+main h2{
+    font-size: 50px;
+}
+main h3{
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        padding: 20px;
+    }
+    main .icon{
+        font-size: 50px;
+    }
+    main h2{
+        font-size: 30px;
+    }
+    main h3{
+        font-size: 20px;
+    }   
+}

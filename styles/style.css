@@ -25,15 +25,6 @@ header .header-title {
   background-position: center;
   height: 300px;
 }
-.slide1{
-  background-image: url("../img/img1.jpg");
-}
-.slide2{
-  background-image: url("../img/img2.jpg");
-}
-.slide3{
-  background-image: url("../img/img3.jpg");
-}
 .slide4{
   background-image: url("../img/img4.jpg");
 }
@@ -118,4 +109,16 @@ footer .links{
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
+}
+
+/* Pages */
+
+.page-title{
+  padding: 0;
+  margin: 0;
+}
+.page-title h1{
+  padding: 50px;
+  margin: 0;
+  text-align: center;
 }
