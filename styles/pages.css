@@ -12,6 +12,21 @@ main h3{
     font-size: 40px;
 }
 
+.about-main img{
+    width: 50vw;
+}
+
+.service-flex{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.service-flex .w3-card-4{
+    width: 40%;
+}
+
 @media only screen and (max-width: 600px) {
     main{
         padding: 20px;
@@ -24,5 +39,10 @@ main h3{
     }
     main h3{
         font-size: 20px;
-    }   
+    }  
+    
+    .service-flex .w3-card-4{
+        width: unset;
+    }
 }
+
