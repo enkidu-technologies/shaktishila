@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaktishila Engineers & Manufacturer's Private Limited</title>
+    <link
+      rel="shortcut icon"
+      href="./img/logo-square.jpg"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      #nuclear-info {
+        padding: 10px;
+        border: 1px solid #ddd;
+        background: #f9f9f9;
+      }
+    </style>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <!-- w3.css framework -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- w3.js library -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </head>
+  <body>
+
+    <table class="w3-table w3-bordered w3-striped">
+      <tr class="w3-blue">
+        <th>Power Plant</th>
+        <th>Location</th>
+        <th>Capacity (MW)</th>
+        <th>Operator</th>
+      </tr>
+      <tr>
+        <td>Tarapur Atomic Power Station</td>
+        <td>Maharashtra</td>
+        <td>1,400</td>
+        <td>NPCIL</td>
+      </tr>
+      <tr>
+        <td>Kudankulam Nuclear Power Plant</td>
+        <td>Tamil Nadu</td>
+        <td>2,000 (planned 6,000)</td>
+        <td>NPCIL</td>
+      </tr>
+      <tr>
+        <td>Kaiga Nuclear Power Plant</td>
+        <td>Karnataka</td>
+        <td>880</td>
+        <td>NPCIL</td>
+      </tr>
+      <tr>
+        <td>Kakrapar Atomic Power Station</td>
+        <td>Gujarat</td>
+        <td>1,140</td>
+        <td>NPCIL</td>
+      </tr>
+      <tr>
+        <td>Rajasthan Atomic Power Station</td>
+        <td>Rajasthan</td>
+        <td>1,180</td>
+        <td>NPCIL</td>
+      </tr>
+      <tr>
+        <td>Madras Atomic Power Station</td>
+        <td>Tamil Nadu</td>
+        <td>440</td>
+        <td>NPCIL</td>
+      </tr>
+      <tr>
+        <td>Narora Atomic Power Station</td>
+        <td>Uttar Pradesh</td>
+        <td>440</td>
+        <td>NPCIL</td>
+      </tr>
+    </table>
+
+    <div id="map" style="height: 500px"></div>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      var map = L.map("map").setView([20.5937, 78.9629], 5); // Center of India
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
+        map
+      );
+
+      var plants = [
+        ["Tarapur Atomic Power Station", 19.8628, 72.6842],
+        ["Kudankulam Nuclear Power Plant", 8.1686, 77.711],
+        ["Kaiga Nuclear Power Plant", 14.8667, 74.4372],
+        ["Kakrapar Atomic Power Station", 21.2391, 73.3503],
+        ["Rajasthan Atomic Power Station", 24.8737, 75.5872],
+        ["Madras Atomic Power Station", 12.5587, 80.1758],
+        ["Narora Atomic Power Station", 28.1564, 78.4065],
+      ];
+
+      plants.forEach(function (plant) {
+        L.marker([plant[1], plant[2]])
+          .addTo(map)
+          .bindPopup("<b>" + plant[0] + "</b>");
+      });
+    </script>
+  </body>
+</html>

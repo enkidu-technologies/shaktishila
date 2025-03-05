@@ -7,4 +7,24 @@ function myFunction() {
   }
 }
 
-// w3.slideshow(".slide", 5000);
+/* filepath: /d:/Z - Enkidu Technologies/Coding - Repos/shaktishila/scripts/script.js */
+const images = [
+  './img/img1.jpg',
+  './img/img2.jpg',
+  './img/img3.jpg',
+  './img/img4.jpg'
+];
+
+let currentImageIndex = 0;
+const heroElement = document.querySelector('.hero');
+
+function changeBackground() {
+  heroElement.style.backgroundImage = `url(${images[currentImageIndex]})`;
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+}
+
+// Initial background set
+changeBackground();
+
+// Change background every 2 seconds
+setInterval(changeBackground, 5000);
