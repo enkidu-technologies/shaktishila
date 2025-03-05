@@ -1,9 +1,14 @@
 @media only screen and (max-width: 600px) {
     .slide{
-        height: 100px;
+        height: 150px;
+        background-position: center;
+        background-size: 150%;
     }
     .hero-content{
-        padding: unset !important;
+        padding: 40px 20px !important;
+    }
+    .hero-h1{
+      font-size: 30px;
     }
     
     .about{
