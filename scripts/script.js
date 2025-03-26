@@ -7,7 +7,6 @@ function myFunction() {
   }
 }
 
-/* filepath: /d:/Z - Enkidu Technologies/Coding - Repos/shaktishila/scripts/script.js */
 const images = [
   './img/img1.jpg',
   './img/img2.jpg',
