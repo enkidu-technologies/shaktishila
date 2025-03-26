@@ -1,41 +1,51 @@
 @media only screen and (max-width: 600px) {
-    .slide{
-        height: 150px;
-        background-position: center;
-        background-size: 150%;
-    }
-    .hero-content{
-        padding: 40px 20px !important;
-    }
-    .hero-h1{
-      font-size: 30px;
-    }
-    
-    .about{
-        padding: 20px;
-        font-size: small;
-        text-align: justify;
-    }
-    
-    .flex-50{
-        width: unset;
-      }
-    .flex-1,
-    .flex-2{
-        padding: 20px;
-    }
-    .flex-2{
-        text-align: left;
-    }
-    .icon-left{
-        padding-left: unset;
-      }
+  .slide {
+    height: 150px;
+    background-position: center;
+    background-size: 150%;
+  }
 
-      .contact{
-        padding: 20px;
-      }
-      footer{
-        padding: 20px;
-        font-size: small;
-      }
+  .hero{
+    padding: 50px !important;
+  }
+  .hero-content {
+    padding: 40px 20px !important;
+  }
+  .hero-h1 {
+    font-size: 30px;
+  }
+
+  .about {
+    padding: 20px;
+    font-size: small;
+  }
+
+  .flex-50 {
+    width: unset;
+  }
+  .flex-1,
+  .flex-2 {
+    padding: 20px;
+  }
+  .flex-2 {
+    text-align: left;
+  }
+  .icon-left {
+    padding-left: unset;
+  }
+
+  .about-main img{
+    width: 100% !important;
+  }
+  .flex-contact{
+    padding: 20px;
+  }
+
+  .contact {
+    padding: 20px;
+  }
+  footer {
+    padding: 20px;
+    font-size: small;
+  }
 }
