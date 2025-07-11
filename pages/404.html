@@ -1,100 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .container {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            max-width: 500px;
-            width: 90%;
-        }
-        .error-code {
-            font-size: 120px;
-            font-weight: bold;
-            color: #e74c3c;
-            margin-bottom: 20px;
-        }
-        .error-message {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .back-home {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .back-home:hover {
-            background-color: #2980b9;
-        }
-        #error-details {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="error-code">404</div>
-        <div class="error-message">Oops! Page Not Found</div>
-        <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
-        <a href="/" class="back-home">Go to Homepage</a>
-        <div id="error-details"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Not Found | Shaktishila.in</title>
+    <link
+      rel="shortcut icon"
+      href="../img/logo-square.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-kFU5sFZJ+AMY/Nw3R9IklxO+HqEr4EJX6EYORpjRXRBnWAr7EXzFrE4/N8Rf8QJWD3uLtx9MEy5fZ5RC4jHw3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-title">
+        <a href="/"
+          ><img src="../img/logo-square.jpg" alt="logo" width="50px"
+        /></a>
+        <h2>Shaktishila<span class="w3-text-red">.</span>in</h2>
+      </div>
+
+      <div class="w3-bar w3-metro-red">
+        <a href="#top" class="w3-bar-item w3-button w3-black w3-hover-white"
+          >Home</a
+        >
+        <a
+          href="./pages/about.html"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+          >About</a
+        >
+        <a
+          href="./pages/services.html"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+          >Services</a
+        >
+        <a
+          href="./pages/contact.html"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+          >Contact</a
+        >
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+
+      <div
+        id="navbar"
+        class="w3-bar-block w3-metro-red w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a href="./pages/about.html" class="w3-bar-item w3-button">About</a>
+        <a href="./pages/services.html" class="w3-bar-item w3-button"
+          >Services</a
+        >
+        <a href="./pages/contact.html" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </header>
+    <div class="w3-container w3-center w3-padding-64">
+      <div class="center-box w3-animate-opacity">
+        <div class="w3-jumbo w3-text-red">
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <h1 class="w3-xxxlarge w3-text-red">404</h1>
+        <h2>Oops! Page Not Found</h2>
+        <p class="w3-large">
+          The page you're looking for doesn't exist or has been moved.
+        </p>
+        <a href="/" class="w3-button w3-metro-red w3-round-xlarge home-btn"
+          ><i class="fa fa-home"></i> Go to Homepage</a
+        >
+      </div>
     </div>
 
-    <script>
-        // JavaScript to add dynamic error details
-        document.addEventListener('DOMContentLoaded', () => {
-            const errorDetailsElement = document.getElementById('error-details');
-            
-            // Get the current URL that caused the 404
-            const currentPath = window.location.pathname;
-            
-            // Display additional error information
-            errorDetailsElement.innerHTML = `
-                <p>Requested URL: ${currentPath}</p>
-                <p>Timestamp: ${new Date().toLocaleString()}</p>
-            `;
+    <footer class="w3-metro-red">
+      <div class="footer-title">
+        <img src="../img/logo-square.jpg" width="50px" alt="logo" />
+        <h2>Shaktishila Engineers & Manufacturer's Private Limited</h2>
+      </div>
+      <p>
+        Transforming waste into energy for a sustainable future with expert
+        consulting services.
+      </p>
+      <div>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="links">
+          <ul>
+            <h4>Menu</h4>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <ul>
+            <h4>Tech Stack</h4>
+            <li>
+              <a
+                href="https://www.w3schools.com/w3css/default.asp"
+                target="_blank"
+                >W3.CSS Framework</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.w3schools.com/w3js/default.asp"
+                target="_blank"
+                >W3.JS Library</a
+              >
+            </li>
+            <li>
+              <a href="https://fontawesome.com/" target="_blank"
+                >Font Awesome</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <h4>Social</h4>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
 
-            // Optional: Add a shake animation to the error code
-            const errorCode = document.querySelector('.error-code');
-            errorCode.addEventListener('mouseover', () => {
-                errorCode.style.animation = 'shake 0.5s';
-            });
-            errorCode.addEventListener('animationend', () => {
-                errorCode.style.animation = '';
-            });
-        });
-
-        // Optional: Add custom styles for shake animation
-        const styleSheet = document.styleSheets[0];
-        styleSheet.insertRule(`
-            @keyframes shake {
-                0%, 100% { transform: translateX(0); }
-                10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-                20%, 40%, 60%, 80% { transform: translateX(10px); }
-            }
-        `, styleSheet.cssRules.length);
-    </script>
-</body>
+        <p>
+          &copy; 2021 Shaktishila Engineers & Manufacturer's Private Limited |
+          Site
+          <a href="https://vatsalsaxena22.github.io/" target="_blank"
+            >Developed</a
+          >
+          & Designed by
+          <a href="https://enkidu.in" target="_blank"
+            >Enkidu Technologies Pvt. Ltd.</a
+          >
+          | Made in India
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
